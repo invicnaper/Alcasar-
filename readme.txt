@@ -1,4 +1,3 @@
-$Id: readme-2.0.txt 581 2011-04-21 16:59:59Z richard $
 
 Alcasar-2.8
 
