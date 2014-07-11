@@ -1,0 +1,433 @@
+/* 	
+	Feuille de style pour les pages d'interceptions coté utilisateurs d'ALCASAR
+	Auteur : Stéphane ERARD
+	Licence : GNU GPL
+
+*/
+
+
+/* règles générales */
+
+/* Couleurs de polices */
+:link, :visited, :hover:link, :hover:visited, H2, #box_url, #box_refuse {
+	color: #000000;
+}
+BODY, H, #boite-logon {
+	color: #666666;
+}
+#acces_controle, .log_out {
+	color: white;
+}
+
+/* Style de police */
+
+BODY, :link, :visited, :hover:link, :hover:visited  {
+	font-family: "DejaVu Sans";
+}
+INPUT, #box_url {
+	font-family: arial;
+}
+#acces_controle, #box_url, #box_bienvenue, #cadre_titre SPAN {
+	font-weight: bold;
+}
+.box_menu :link , .box_menu :visited, .box_menu :hover:link, .box_menu :hover:visited  {
+	text-decoration: none;
+}
+/*Couleurs de fond */
+
+BODY {
+	background-color: #666666;
+}
+
+INPUT, #contenu_acces, #logon, #auth_reussi {
+	background-color: #ffffff;
+}
+
+/* R�gles des balises HTML */
+
+H1, H2, #aide-certif {
+	text-align: center;	
+	padding: 0px;
+	margin: 3px;
+}
+P, UL, LI{
+	text-align: justify;
+}
+
+BODY {
+	background-image: url(../images/fond.png);
+	background-repeat: repeat-x;
+	text-align: center;
+	font-size: 12px;
+	margin: 0px;
+}
+H1 {
+	font-size: 55px;
+}
+H2 {
+	font-size: 30px;
+}
+H6, #aide-certif{
+	font-size: 100%;
+}
+UL {
+	margin: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 115px;
+	padding-top: 5px;
+}
+LI {
+	list-style-type: square;
+	padding-top: 2px;
+}
+TABLE {
+	font-size: 90%;
+}
+IMG {
+	height: 150px;
+}
+INPUT {
+	border: #666666 1px solid;
+	padding: 2px;
+	font-family: arial;
+	height: 22px;
+}
+
+/* taille et position des logos */
+#logo-alcasar {
+	position: absolute;
+	bottom: 25px;
+	right: 5px;
+	height: 130px;
+}
+#logo-organ {
+	position: relative;
+	top: 0px;
+	right: -10px;
+	max-width: 150px;
+	max-height: 150px;
+}
+
+/* placement et proportion de la boite de saisie et de l'aide */
+#logon {
+	position: relative;
+	width: 620px;
+	top: 20px;
+/* ombrage css3*/	
+	-moz-box-shadow: 0px 0px 12px #000; 
+	-webkit-box-shadow: 0px 0px 12px #000;
+	box-shadow: 0px 0px 12px #000;
+}
+#boite-logon {
+	background-image: url(../images/fond-bdd_grand.png);
+	background-repeat: repeat-x;
+	padding: 10px;
+	width: 420px;
+	height: 189px;
+}
+#boite-logon TD {
+	padding-top: 10px;
+}
+#boite-info {
+	border: 0px;
+	margin-top: 25px;
+	width: 580px;
+	padding-top: 10px;
+}
+/*boite de dialogue de deconnection*/
+
+#auth_reussi {
+	width: 450px;
+	margin-top: 12px;
+	padding-top: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 0px;
+}
+.text_auth {
+	font-size: 20px;
+}
+.lien_deco {
+	text-align: center;
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+.log_out {
+	font-size: 24px;
+	text-align: center;
+	margin-top: 30px;
+}
+#boite-logon, #auth_reussi, #logon {
+	border: 1px #efefef solid;
+
+/* ombrage css3*/
+
+	-moz-box-shadow: 0px 0px 6px #000; 
+	-webkit-box-shadow: 0px 0px 6px #000;
+	box-shadow: 0px 0px 6px #000;
+}
+#liens_redir {
+	position: relative;
+	bottom: -100px;
+	left: 90px;
+	text-align: center;
+}
+#liens_redir P A {
+	font-size: 12px;
+	text-align: center;
+	margin: 15px;
+}
+/* style de la page accès controlé*/
+
+#cadre_titre{
+	position: relative;
+	width: 730px;
+	height: 98px;
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 2;
+
+/* ombrage css3 */
+
+	-moz-box-shadow: 1px 4px 10px #000; 
+	-webkit-box-shadow: 1px 4px 10px #000;
+	box-shadow: 1px 4px 10px #000;
+}
+#cadre_titre .titre_controle {
+	background-image: url(../images/fond-bandeau.png);
+	background-repeat: repeat-x;
+}
+#cadre_titre .titre_refus  {
+	background-image: url(../images/fond-bandeau-rouge.png);
+	background-repeat: repeat-x;
+}
+#boite_logo{
+	position: absolute;
+	top: -30px;
+	left: -50px;
+	width: 150px;
+	height: 150px;
+	z-index: 2;
+}
+#acces_controle {
+	text-align: center;
+	font-size: 40px;
+	padding-top: 25px;
+	padding-bottom: 27px;
+	margin: 0px;
+}
+#logo_acces {
+	position: relative;
+	top: 0px;
+	left: 0px;
+}
+#contenu_acces {
+	position: relative;
+	width: 640px;
+	height: 400px;
+	top: -20px;
+	padding-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 1;
+
+/* ombrage CSS3 */
+
+	-moz-box-shadow: 1px 1px 10px #000; 
+	-webkit-box-shadow: 1px 1px 10px #000;
+	box-shadow: 1px 1px 10px #000;
+}
+#logo_acces IMG, #box_refuse IMG {
+	width: 95px;
+	height: 95px;
+}
+
+/* Boite des liens*/
+
+#box_url {
+	position: relative;
+	top: 35px;
+	text-align: right;
+	font-size: 14px;
+	margin-right: 20px;
+}
+#box_bienvenue {
+	font-size: 18px;
+}
+#cadre_titre SPAN {
+	position: absolute;
+	top: 70px;
+	width: 510px;
+	left: 110px;
+	font-size: 14px;
+	color: red;
+	text-align: center;
+	border: 2px red solid;
+	padding: 2px;
+	background-color: white;
+}
+#contenu_acces SPAN {
+	position: relative;
+	bottom: -150px;
+	font-family: "courier new";
+}
+#box_refuse {
+	font-size: 16px;
+	margin-left: 130px;
+	margin-right: 20px;
+	margin-top: 40px;
+	width: 460px;
+}
+#box_refuse IMG {
+	position: absolute;
+	top: -10px;
+	left: -110px;
+}
+#box_refuse, #box_bienvenue {
+	position: relative;
+	top: 55px;
+}
+
+.box_menu IMG {
+	position: absolute;
+	width: 70px;
+	height: 70px;
+	top: -25px;
+}
+.box_menu, #logon , #contenu_acces, #acces_controle, #cadre_titre, #box_info{
+/* Arrondi CSS3 Firefox*/
+	-moz-border-radius: 10px;
+/* Arrondi CSS3 Autres Nav*/
+	border-radius: 10px;
+}
+.box_menu {
+	position: absolute;
+	height: 35px;
+	width: 310px;
+	background-image: url(../images/fond-bdd.png);
+	background-repeat: repeat-x;
+
+/* ombrage CSS3 */
+	-moz-box-shadow: 1px 1px 6px #666; 
+	-webkit-box-shadow: 1px 1px 6px #666;
+	box-shadow: 1px 1px 6px #666;
+}
+.div-cache {
+	visibility: hidden;
+	position: absolute;
+	top: -1000px;
+}
+#box_conn {
+	top: 120px;
+}
+#box_certif {
+	top: 190px;
+}
+#box_mdp {
+	top: 260px;
+}
+#box_acc {
+	top: 330px;
+}
+#box_certif, #box_acc {
+	left: 60px;
+	text-align: right;
+}
+#box_conn, #box_mdp {
+	left: 20px;
+	text-align: left;
+}
+#box_conn IMG, #box_mdp IMG {
+	left: 5px;
+}
+#box_certif IMG, #box_acc IMG {
+	right: 5px;
+}
+#box_conn SPAN, #box_certif SPAN, #box_mdp SPAN, #box_acc SPAN {
+	position: relative;
+	font-size: 12px;
+	font-weight: bold;
+	top: 10px;
+}
+#box_conn SPAN, #box_mdp SPAN {
+	margin-left: 80px;
+}
+#box_certif SPAN, #box_acc SPAN {
+	margin-right: 80px;
+}
+
+/*Animation visuel des cadres liens (Gecko et ie9)*/
+#box_conn:hover, #box_certif:hover, #box_mdp:hover, #box_acc:hover  {
+/*	cursor: pointer;*/
+	background-image: url(../images/fond-bdd_rouge.png);
+	background-repeat: repeat-x;
+
+/* ombrage CSS3 */
+	-moz-box-shadow: 0px 0px 0px #fff; 
+	-webkit-box-shadow: 0px 0px 0px #fff;
+	box-shadow: 0px 0px 0px #fff;
+}
+#box_conn:hover a, #box_certif:hover a, #box_mdp:hover a, #box_acc:hover a .box_menu a:hover, .box_menu a:visited:hover, #box_info :link:hover, #box_info :visited:hover {
+	color: red;
+
+}
+
+/*Mise en page de la bulle d'info (coté droit)*/
+#box_info H2 {
+	font-size: 14px;
+	margin: 10px auto;
+}
+#box_info P {
+	font-size: 11px;
+	margin: 10px;
+}
+#box_info IMG {
+	position: absolute;
+	bottom: -60px;
+	right: 10px;
+	height: 120px;
+}
+#box_info {
+	position: absolute;
+	top: 118px;
+	right: 20px;
+	width: 230px;
+	height: 250px;
+	background-color: #efefef;
+	
+/* ombrage CSS3 */
+	-moz-box-shadow: 1px 1px 6px #666; 
+	-webkit-box-shadow: 1px 1px 6px #666;
+	box-shadow: 1px 1px 6px #666;
+}
+#box_info :link, #box_info :visited  {
+	text-decoration: none;
+}
+#box_info UL{
+	text-align: left;
+	padding : 0 0 0 15px;
+	margin : 10px;
+}
+#box_info LI{
+	text-align: left;
+	font-size: 10px;
+	list-style-type : disc;
+	padding : 0 0 0 0;
+}
+#authorized_domain{
+	height: 40px;
+	width: 450px;
+	text-align: left;
+	display: block;
+/*	border: 1px solid red;*/
+	margin-right: 50px;
+}
+#authorized_domain LI{
+	text-align: center;
+	list-style-type : none;
+	margin-right : 10px;
+	display: block;
+	float: left;
+}

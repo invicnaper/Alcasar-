@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><!-- by REXY -->
+<HEAD>
+<TITLE>bonus</TITLE>
+</HEAD>
+<BODY background="/images/linux_ksc2.jpg" TEXT="#FFFFFF" BGCOLOR="#000000">
+<!-- on crée 3 calques -->
+<div ID="obj1" STYLE="position:absolute;TOP:0px;LEFT:0px;width:20px;height:18px;">
+<dd><img src="/images/mini-tux.png" alt="linux" WIDTH="65" HEIGHT="72"></dd>
+</div>
+<div ID="obj2" STYLE="position:absolute;TOP:0px;LEFT:0px;width:20px;height:18px;">
+<dd><img src="/images/mini-tux.png" alt="linux" WIDTH="65" HEIGHT="72"></dd>
+</div>
+<div ID="obj3" STYLE="position:absolute;TOP:0px;LEFT:0px;width:20px;height:18px;">
+<dd><img src="/images/mini-tux.png" alt="linux" WIDTH="65" HEIGHT="72"></dd>
+</div>
+<div ID="obj4" STYLE="position:absolute;TOP:0px;LEFT:0px;width:20px;height:18px;">
+<dd><img src="/images/mini-tux.png" alt="linux" WIDTH="65" HEIGHT="72"></dd>
+</div>
+<CENTER><H2>A.L.C.A.S.A.R</H2>
+<H3>
+Application Libre pour le Contr&ocirc;le Authentifi&eacute; et S&eacute;curis&eacute; des Acc&egrave;s au R&eacute;seau
+</H3></CENTER>
+<script LANGUAGE="javascript">
+//Fonction pour ouvrir une nouvelle fenêtre
+function ouvrir(page)
+	{
+	window.open(page, "From Rexy74", "alwaysRaised=yes,toolbar=yes,location=yes,directories=no,status=no,menubar=yes,scrollbars=yes,resizable=no,copyhistory=no,hotkeys=no,width=640 ,height=480");
+	}
+//Code d'animation
+/* On récupère les 3 calques */
+var div1 = document.all.obj1.style;
+var div2 = document.all.obj2.style;
+var div3 = document.all.obj3.style;
+var div4 = document.all.obj4.style;
+var objet;
+objet = new Array(div1,div2,div3,div4)
+/* On placer l'objet (i) au coordonnees (px,py) */
+function placeObj(i,px,py)
+	{
+	objet[i].left=px;
+	objet[i].top=py;
+	}
+/* On se place au centre de la fenêtre */
+var yBase = window.innerHeight/3;
+var xBase = window.innerWidth/3;
+var delay = 1005;
+var yAmpl = 20;
+var yMax = 50;
+var step = .1;
+var ystep = .25;
+var currStep = 0;
+var tAmpl=1;
+// définition du centre de gravité
+var Xpos = 300;
+var Ypos = 220;
+var j = 0;
+function animation()
+	{
+	var cx;var cy;
+	for ( j = 0 ; j < 4 ; j++ )
+		{
+		// merci à supelec pour la fonction
+		cx=Xpos + Math.sin((20*Math.sin(currStep/20))+j*70)*xBase*(Math.sin(10+currStep/(10+j))+0.2)*Math.cos((currStep + j*25)/10);
+		cy=Ypos + Math.cos((20*Math.sin(currStep/(20+j)))+j*70)*yBase*(Math.sin(10+currStep/10)+0.2)*Math.cos((currStep + j*25)/10);
+		placeObj(j,cx,cy);
+		}
+	currStep += step;
+	setTimeout("animation()", 10) ;
+	}
+animation();
+</script>
+<BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+<TABLE width="100%" border="1" cellspacing="0" cellpadding="0">
+	<TR>
+	<TD align="center"><A HREF=javascript:ouvrir("http://www.linux.org")><img border="0" src="/images/footer_linux.png"></A></TD>
+	<TD align="center"><A HREF=javascript:ouvrir("http://www.mageia.org")><img border="0" src="/images/footer_mageia.png"></A></TD>
+	<TD align="center"><A HREF=javascript:ouvrir("http://www.coova.org/CoovaChilli")><img border="0" src="/images/footer_coova.png"></A></TD>
+	<TD align="center"><A HREF=javascript:ouvrir("http://www.freeradius.org")><img border="0" src="/images/footer_freeradius.png"></A></TD>
+	<TD align="center"><A HREF=javascript:ouvrir("http://www.mysql.com")><img border="0" src="/images/footer_mysql.png"></A></TD>
+	<TD align="center"><A HREF=javascript:ouvrir("http://www.apache.org")><img border="0" src="/images/footer_apache.png"></A></TD>
+	<TD align="center"><A HREF=javascript:ouvrir("http://www.php.net")><img border="0" src="/images/footer_php.png"></A></TD>
+	</TR>
+	<TR>
+	<TD align="center"><A HREF=javascript:ouvrir("http://www.gnupg.org")><img border="0" src="/images/footer_gnupg.png"></A></TD>
+	<TD align="center"><A HREF=javascript:ouvrir("http://awstats.sourceforge.net")><img border="0" src="/images/footer_awstats.png"></A></TD>
+	<TD align="center"><A HREF=javascript:ouvrir("http://firewalleyes.creabilis.com")><img border="0" src="/images/footer_firewalleyes.png"></A></TD>
+	<TD align="center"><A HREF=javascript:ouvrir("http://www.netfilter.org")><img border="0" src="/images/footer_netfilter.png"></A></TD>
+	<TD align="center"><A HREF=javascript:ouvrir("http://www.squid-cache.org")><img border="0" src="/images/footer_squid.png"></A></TD>
+	<TD align="center"><A HREF=javascript:ouvrir("http://dansguardian.org")><img border="0" src="/images/footer_dansguardian.png"></A></TD>
+	<TD align="center"><A HREF=javascript:ouvrir("http://thekelleys.org.uk/dnsmasq/doc.html")><img border="0" src="/images/footer_dnsmasq.png"></A></TD>
+	</TR>
+</TABLE>
+</BODY>
+</HTML>

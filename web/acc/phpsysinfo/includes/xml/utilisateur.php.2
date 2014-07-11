@@ -1,0 +1,87 @@
+<?php 
+/***************************************************************************
+ *   Copyright (C) 2006 by phpSysInfo - A PHP System Information Script    *
+ *   http://phpsysinfo.sourceforge.net/                                    *
+ *                                                                         *
+ *   This program is free software; you can redistribute it and/or modify  *
+ *   it under the terms of the GNU General Public License as published by  *
+ *   the Free Software Foundation; either version 2 of the License, or     *
+ *   (at your option) any later version.                                   *
+ *                                                                         *
+ *   This program is distributed in the hope that it will be useful,       *
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of        *
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         *
+ *   GNU General Public License for more details.                          *
+ *                                                                         *
+ *   You should have received a copy of the GNU General Public License     *
+ *   along with this program; if not, write to the                         *
+ *   Free Software Foundation, Inc.,                                       *
+ *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.             *
+ ***************************************************************************/
+
+// $Id: vitals.php,v 1.32 2007/02/18 18:59:54 bigmichi1 Exp $
+
+// xml_vitals()
+
+function xml_utilisateur () {
+	global $sysinfo;
+	global $loadbar;
+	global $show_vhostname;
+	
+	$strLoadavg = "";
+	$arrBuf = ( $loadbar ? $sysinfo->loadavg( $loadbar ) : $sysinfo->loadavg() );
+	
+	foreach( $arrBuf['avg'] as $strValue) {
+		$strLoadavg .= $strValue . ' ';
+	}
+	
+	$_text = "  <Portail>\n"
+		. "    <Utilisateur>" . htmlspecialchars( $show_vhostname ? $sysinfo->vhostname() : $sysinfo->chostname(), ENT_QUOTES ) . "</Utilisateur>\n"
+		. "    <Groupe>" . htmlspecialchars( $show_vhostname ? $sysinfo->vip_addr() : $sysinfo->ip_addr(), ENT_QUOTES ) . "</Groupe>\n";
+	$_text .= "  </Portail>\n";
+	
+	return $_text;
+} 
+
+// html_vitals()
+function html_utilisateur () {
+	global $webpath;
+	global $XPath;
+	global $text;
+	
+	$textdir = direction();
+	$scale_factor = 2;
+	$strLoadbar = "";
+	$uptime = "";
+	
+	if( $XPath->match( "/phpsysinfo/Portail/User" ) )
+		$strLoadbar = "<br>" . create_bargraph( $XPath->getData( "/phpsysinfo/Vitals/CPULoad" ), 100, $scale_factor ) . "&nbsp;" . $XPath->getData( "/phpsysinfo/Portail/User" ) . "%";
+	
+	$_text = "<table border=\"0\" width=\"100%\" align=\"center\">\n"
+		. "  <tr>\n"
+		. "    <td valign=\"top\"><font size=\"-1\">" . $text['utilisateur'] . "</font></td>\n"
+		. "    <td><font size=\"-1\">" . $XPath->getData( "/phpsysinfo/Portail/Utilisateur" ) . "</font></td>\n"
+		. "  </tr>\n"
+		. "  <tr>\n"
+		. "    <td valign=\"top\"><font size=\"-1\">" . $text['groupe'] . "</font></td>\n"
+		. "    <td><font size=\"-1\">" . $XPath->getData( "/phpsysinfo/Portail/Groupe" ) . "</font></td>\n"
+		. "  </tr>\n"
+		. "</table>\n";
+	
+	return $_text;
+} 
+
+function wml_utilisateur () {
+	global $XPath;
+	global $text;
+	
+	$_text = "<card id=\"vitals\" title=\"" . $text['vitals']  . "\">\n"
+		. "<p>" . $text['hostname'] . ":<br/>\n"
+		. "-&nbsp;" . $XPath->getData( "/phpsysinfo/Vitals/Hostname" ) . "</p>\n"
+		. "<p>" . $text['ip'] . ":<br/>\n"
+		. "-&nbsp;" . $XPath->getData( "/phpsysinfo/Vitals/IPAddr" ) . "</p>\n"
+		. "</card>\n";
+	
+	return $_text;
+}
+?>

@@ -1,0 +1,187 @@
+/* 	
+	Feuille de style pour les pages d'interceptions cot? utilisateurs d'ALCASAR
+	Auteur : St?phane ERARD
+	Licence : GNU GPL
+
+*/
+
+
+/* r?gles g?n?rales */
+
+/* Couleurs de polices */
+:link, :visited, :hover:link, :hover:visited, H1  {
+	color: #000000;
+}
+BODY {
+	color: #666666;
+}
+
+/* Style de police */
+
+BODY, :link, :visited, :hover:link, :hover:visited  {
+	font-family: "DejaVu Sans";
+}
+
+
+/*Couleurs de fond */
+
+BODY {
+	background-color: #666;
+}
+
+
+/* R?gles des balises HTML */
+
+P {
+	text-align: justify;
+}
+
+BODY {
+	background-image: url(../images/fond.png);
+	background-repeat: repeat-x;
+	text-align: center;
+	font-size: 12px;
+	margin: 0px;
+}
+
+TABLE {
+/*	font-size: 90%;*/
+}
+IMG {
+	height: 150px;
+}
+
+/*Boite de dialogue de deconnection*/
+
+#page {
+	width: 590px;
+	margin: 12px auto;
+}
+
+#pass_chg {
+	position: relative;
+}
+
+#pass_chg IMG {
+	position: relative;
+	float: left;
+	top: -60px;
+	left: -50px;
+}
+
+#pass_chg_content {
+	position: relative;
+	float: left;
+	top: -40px;
+	width: 100%;
+}
+
+#lien_pass {
+	font-size: 50%;
+	text-align: right;
+}
+
+#info_pass {
+	visibility: hidden;
+	position: absolute;
+	top: -1500px;
+/*	background-color: white;
+	width: 500px;
+
+	margin: 30px;
+	padding: 15px;
+ ombrage css3
+
+	-moz-box-shadow: 0px 0px 12px #000; 
+	-webkit-box-shadow: 0px 0px 12px #000;
+	box-shadow: 0px 0px 12px #000;*/
+
+}
+
+#block_pass {
+	position: relative;
+	background-color: white;
+	width: 500px;
+	height: 345px;
+	margin: 30px;
+	padding: 15px;
+/* ombrage css3*/
+
+	-moz-box-shadow: 0px 0px 12px #000; 
+	-webkit-box-shadow: 0px 0px 12px #000;
+	box-shadow: 0px 0px 12px #000;
+}
+#block_pass SPAN {
+	float: left;
+	margin-top: 5px;
+}
+
+#titre_pass {
+	font-size: 20px;
+}
+
+#btn_pass, #btn_retour {
+	float: right;
+	margin-top: 20px;
+}
+
+#btn_pass {
+}
+
+#btn_retour {
+	margin-right: 20px;
+}
+
+#btn_pass:hover {
+}
+
+#champs_pass {
+	margin: auto;
+}
+
+#champs_pass TD {
+	padding: 4px;
+}
+
+#champs_pass TD INPUT {
+	border: 1px solid #aaa;
+	width: 195px;
+}
+
+TD.first_item {
+	text-align: right;
+	width: 255px;
+}
+.lien_deco {
+	text-align: center;
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+.log_out {
+	font-size: 24px;
+	text-align: center;
+	margin-top: 30px;
+}
+.btn_form {
+	cursor: pointer;
+	height: 26px;
+	width: 130px;
+	border: none;
+	background: #999 url(../images/bg.png) 0 0 repeat-x;
+	font-weight: bold;
+
+/* ombrage css3*/
+
+	-moz-box-shadow: 2px 2px 2px #000; 
+	-webkit-box-shadow: 2px 2px 2px #000;
+	box-shadow: 2px 2px 2px #000;
+}
+.btn_form:hover {
+	background-color: red;
+	
+/* ombrage css3*/
+
+	-moz-box-shadow: 2px 2px 2px #666; 
+	-webkit-box-shadow: 2px 2px 2px #666;
+	box-shadow: 2px 2px 2px #666;
+}

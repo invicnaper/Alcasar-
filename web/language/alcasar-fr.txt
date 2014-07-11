@@ -1,0 +1,512 @@
+###################
+# $Id$
+# Fichier global de la langue :  Français
+
+###########
+# acc/menu.php
+
+$l_home		=	"ACCUEIL";
+$l_system	=	"SYSTÈME";
+$l_auth		=	"AUTHENTIFICATION";
+$l_filter	=	"FILTRAGE";
+$l_statistics	=	"STATISTIQUES";
+$l_backup	=	"SAUVEGARDES";
+$l_activity	=	"Activité";
+$l_domains_filter=	"Domaines et URLs";
+$l_ldap		=	"Ldap/A.D.";
+$l_access_nb	=	"Accès au centre";
+$l_create_user	=	"Créer un usager";
+$l_create_voucher =	"Créer un ticket rapide";
+$l_edit_user	=	"Éditer un usager";
+$l_create_group	=	"Créer un groupe";
+$l_edit_group	=	"Éditer un groupe";
+$l_import_empty	=	"Importer / Vider";
+$l_network	=	"Réseau";
+$l_stat_user_day=	"usager/jour";
+$l_stat_con	=	"connexions";
+$l_stat_daily	=	"usage journalier";
+$l_stat_web	=	"traffic WEB";
+$l_firewall	=	"parefeu";
+$l_menu		=	"Menu";
+
+
+####################
+# pass/index.php 
+$R_title =		"Changement de mot de passe utilisateur";
+$R_form_l1 =		"Utilisateur :";
+$R_form_l2 =		"Ancien mot de passe :";
+$R_form_l3 =		"Nouveau mot de passe :";
+$R_form_l4 =		"Nouveau mot de passe (confirmation) :";
+$R_eval_pass = 		"";
+$R_passwordmeter =	"Propulsé par 'Shibbo Password Analyser'</a>";
+$R_form_button_valid =	"Modifier";
+$R_form_button_retour =	"Annuler";
+$R_form_result1 =	"Votre mot de passe a &eacute;t&eacute; modifi&eacute; avec succ&egrave;s";
+$R_form_result2 =	"Erreur de changement de mot de passe";
+$R_retour =		"Retour &agrave; la page d'accueil ALCASAR";
+
+
+######################
+# intercept.php
+
+$l_access_denied =	"ACC&Egrave;S REFUS&Eacute;";
+$l_access_welcome =	"Bienvenue sur ALCASAR";
+$l_access_unavailable =	"ACC&Egrave;S INDISPONIBLE";
+$l_required_domain =	"Site WEB demand&eacute;";
+$l_explain_acc_access =	"Le centre de gestion permet d'administrer le portail. Vous devez poss&eacute;der un compte d'administration ou de gestion pour y acc&eacute;der.";
+$l_explain_access_deny ="Vous tentez d'acc&eacute;der &agrave; une ressource dont le contenu est r&eacute;put&eacute; contenir des informations inappropri&eacute;es.";
+$l_explain_net_pb =	"Votre portail d&eacute;tecte que l'acc&egrave;s &agrave; Internet est indisponible.";
+$l_contact_access_deny ="Contactez le responsable de la s&eacute;curit&eacute; (OSSI/RSSI) si vous pensez que ce filtrage est abusif.";
+$l_contact_net_pb =	"Contactez votre responsable informatique ou votre prestataire Internet pour plus d'information.";
+$l_welcome =		"Page principale de votre portail captif";
+$l_acc_access =		"<a href=\"https://$hostname/acc\">Acc&egrave;s au centre de gestion</a>";
+$l_install_certif =	"<a href=\"$cert_add/certificat_alcasar_ca.crt\">Installer le certificat racine</a>";
+$l_install_certif_more = "<a href=\"$cert_add/certificat_alcasar_ca.crt\">Installation du certificat de l'autorit&eacute; racine d'ALCASAR</a>";
+
+$l_certif_explain =	"Permet l'&eacute;change de donn&eacute;es s&eacute;curis&eacute;es entre votre station de consultation et le portail captif ALCASAR.<BR>Si ce certificat n'est pas enregistr&eacute; sur votre station de consultation, il est possible que des alertes de s&eacute;curit&eacute;s soient &eacute;mises par votre navigateur.<br><br>";
+$l_certif_explain_help = "<a href=\"alcasar-certificat.pdf\" target=\"_blank\">Aide complémentaire</a>";
+
+$l_logout_explain_null = "Aucune session de consultation Internet n'est actuellement ouverte sur votre syst&egrave;me.";
+$l_logout_null = "<a href=\"http://www.google.fr\">Ouvrir une session Internet</a>";}
+$l_logout_explain_connect = "Ferme la session de l'usager actuellement connect&eacute;. <br><br>Utilisateur connect&eacute; : <a href=\"http://$hostname:3990/logoff\" title=\"Deconnecter l'utilisateur $user[5]\"><b>$user[5]</b></a><br><br>$nb_connection_history derni&egrave;res connexions :$connection_history";
+$l_logout_connect = "<a href=\"http://$hostname:3990/logoff\">Se d&eacute;connecter d'internet</a>";
+$l_logout_explain_except = "Votre système ($user[5]) est en exception d'authentication.<br><br>$nb_connection_history last connections :$connection_history";
+$l_logout_except = "Information des connexions";
+
+$l_password_change =	"<a href=\"https://$hostname/pass\">Changer votre mot de passe</a>";
+$l_password_change_explain = "Vous redirige sur la page de changement du mot de passe de votre compte d'acc&egrave;s &agrave; internet.<br><br>Vous devez avoir un compte internet valide.";
+$l_back_page =		"<a href=\"javascript:history.back()\">Page pr&eacute;c&eacute;dente</a>";
+
+
+############
+status.php
+
+$l_login1	=		"Authentification r&eacute;ussie";
+$l_logout	= 		"Fermeture de la session";
+$l_logout_question	=	"Etes vous sûr de vouloir vous déconnecter?";
+$l_loggedout	=		"Votre session est fermée";
+$l_wait		=		"Patientez un instant ....";
+$l_state_label	=		"Etat";
+$l_session_id_label	=	"Session ID";
+$l_max_session_time_label=	"Temps de connexion autoris&eacute";
+$l_max_idle_time_label	=	"Inactivit&eacute; max. autoris&eacute;e";
+$l_start_time_label	=	"D&eacute;but de connexion";
+$l_session_time_label	=	"Dur&eacute;e de connexion";
+$l_idle_time_label	=	"Inactivit&eacute;";
+$l_downloaded_label	=	"Donn&eacute;es t&eacute;l&eacute;charg&eacute;es";
+$l_uploaded_label	=	"Donn&eacute;es envoy&eacute;es";
+$l_original_url_label	=	"URL demand&eacute;e";
+$l_not_available	=	"Non disponible";
+$l_na	=			"N/D";	//à traduire
+$l_error=			"erreur";
+$l_welcome	=		"Bienvenue";
+$l_conn_history	=		"Vos $nb_connection_history derni&egrave;res connexions";
+$l_connected 	=		"session active";  
+$l_a_connection	=		"Vous &ecirc;tes d&eacute;j&agrave; connect&eacute; sur le r&eacute;seau";
+$l_a_connection_time	=	"fois";
+
+
+#############
+acc/admin/activity.php
+
+$l_activity =			"Activit&eacute; sur le r&eacute;seau de consultation";
+$l_ip_adr =			"Adresse IP";
+$l_mac_adr =			"Adresse MAC";
+$l_user =			"Usager";
+$l_mac_allowed =		"@MAC autoris&eacute;e";
+$l_action =			"Action";
+$l_dissociate =			"Dissocier";
+$l_disconnect =			"D&eacute;connecter";
+$l_refresh =			"Cette page est rafraichie toutes les 30 secondes";
+$l_edit_user =			"Editer l'utilisateur"; 
+
+
+
+###############
+acc/admin/auth_exceptions.php
+
+$l_error_open_file	=	"Erreur d'ouverture du fichier";
+$l_trusted_domain	=	"Noms de domaine Internet de confiance";
+$l_domain		=	"Noms de domaine";
+$l_comment_explain	=	"Lien affiché dans la page d'interception";
+$l_comment_explain2	=	"Laissez vide si non affiché";
+$l_remove		=	"Retirer de la liste";
+$l_trusted_ip		=	"adresses IP de confiance";
+$l_trusted_equipments	=	"Equipements de consultation de confiance";
+$l_comment		=	"Commentaires";
+$l_trusted_domain_explain = 	"Gérez ici les noms de domaine Internet pouvant &ecirc;tre joints sans authentification";
+$l_trusted_equipments_explain= 	"Pour gérer les équipements du réseau de consultation pouvant accéder à Internet sans être interceptés : lisez la documentation d'exploitation (ch.4.7c)";
+$l_trusted_ip_explain	= 	"Gérez ici les adresses IP de systèmes ou de réseaux pouvant être joints sans authentification";
+$l_submit		= 	"Enregistrer";
+$l_add_to_list		= 	"Ajouter à la liste";
+$l_apply		= 	"Appliquer les changements";
+
+
+################
+acc/admin/bl_categories_help.php
+
+$l_title = 			"Catégories de la liste noire";
+$l_error_open_file =		"Erreur d'ouverture du fichier";
+$l_close =			"Fermer";
+$l_unknown_cat =		"Cette catégorie n'est pas décrite";
+$l_nb_domains =			"Nombre de noms de domaine filtrés :";
+$l_nb_urls =			"Nombre d'URL filtrés :";
+$l_explain_adult =		"Sites relatifs à l'érotisme et à la pornographie";
+$l_explain_agressif =		"Sites extrémistes, racistes, antisémites ou incitant à la haine";
+$l_explain_arjel =		"Sites de pari en ligne certifies par l'ARJEL (Autorité de Régulation des Jeux En Ligne)";
+$l_explain_astrology =		"Sites relatifs à l'astrologie";
+$l_explain_bank=		"Sites de banques en ligne";
+$l_explain_audio_video=		"Sites de téléchargement de fichiers audio et vidéo";
+$l_explain_blog=		"Sites d'hébergement de blogs";
+$l_explain_celebrity=		"Sites « people », stars, etc.";
+$l_explain_chat=		"Sites de dialogue en ligne";
+$l_explain_child=		"Sites pour enfants";
+$l_explain_cleaning=		"Sites relatifs à la mise à jour logicielle ou antivirale";
+$l_explain_dangerous_material=	"Sites relatifs à la création de produits dangereux (explosif, poison, etc.)";
+$l_explain_dating=		"Sites de rencontres en ligne";
+$l_explain_drogue=		"Sites relatifs aux produits stupéfiants";
+$l_explain_filehosting=		"Entrepôts de fichiers  (vidéo, images, son, logiciels, etc.)";
+$l_explain_financial=		"Sites d'informations financières, bourses, etc.";
+$l_explain_forums=		"Sites d'hébergement de forums de discussion";
+$l_explain_gambling=		"Sites de jeux d'argent en ligne (casino, grattage virtuel, etc.)";
+$l_explain_games=		"Sites de jeux en ligne";
+$l_explain_hacking=		"Sites relatifs au piratage informatique";
+$l_explain_jobsearch=		"Sites de recherche d'emplois";
+$l_explain_liste_bu=		"Liste de sites éducatifs pour bibliothèque";
+$l_explain_malware=		"Site relatifs au logiciels malveillants (virus, vers, trojans, etc.)";
+$l_explain_manga=		"Site de Mangas";
+$l_explain_marketingware=	"Sites marchands douteux (X, organes, enfants, etc.)";
+$l_explain_mixed_adult=		"Sites pour adultes (image-choc, gore, guerre, etc.)";
+$l_explain_mobile_phone=	"Sites relatifs aux mobiles GSM (sonneries, logos, etc.)";
+$l_explain_ossi=		"Noms de domaine et URLs que vous ajoutez à la liste noire (voir ci-dessous)";
+$l_explain_phishing=		"Sites relatifs à l'hammeçonnage (pièges bancaires, redirection, etc.)";
+$l_explain_press=		"Sites de presse";
+$l_explain_publicite=		"Sites ou bannières publicitaires";
+$l_explain_radio=		"Sites de radios en ligne ou de podcast";
+$l_explain_reaffected=		"Sites connus ayant changé de propriétaire (et donc de contenu)";
+$l_explain_redirector=		"Sites de redirection, d'anonymisation ou de contournement";
+$l_explain_remote_control=	"Sites permettant la prise de controle a distance";
+$l_explain_sect=		"Sites sectaires";
+$l_explain_social_networks=	"Sites de réseaux sociaux";
+$l_explain_sexual_education=	"Sites relatifs à l'éducation sexuelle";
+$l_explain_shopping=		"Sites de vente et d'achat en ligne";
+$l_explain_sport=		"Sites de sport";
+$l_explain_strict_redirector=	"URL intentionnellement mal formées";
+$l_explain_strong_redirector=	"URL mal formées dans une requête « google »";
+$l_explain_tricheur=		"Sites relatifs aux tricheries (examens, concours, etc.)";
+$l_explain_webmail=		"Site WEB permettant de consultation son courrier électronique";
+$l_explain_warez=		"Sites relatifs aux logiciels piratés (crackés), aux générateurs de clés, etc.";
+
+
+###################
+acc/admin/dns_filter.php
+
+$l_title1 =			"Filtrage de noms de domaine et d'URL";
+$l_error_open_file=		"Erreur d'ouverture du fichier";
+$l_dnsfilter_on=		"Le filtrage de noms de domaine et d'URL est actuellement activé";
+$l_dnsfilter_off=		"Le filtrage de noms de domaine et d'URL est actuellement désactivé";
+$l_switch_filtering_on=		"Activer le filtrage";
+$l_switch_filtering_off=	"Désactiver le filtrage";
+$l_main_bl=			"Liste noire";
+$l_bl_version=			"Version actuelle :";
+$l_bl_categories=		"Choix des catégories à filtrer";
+$l_download_bl=			"Télécharger la dernière version";
+$l_fingerprint=			"L'empreinte numérique du fichier téléchargé est : ";
+$l_fingerprint2=		"Vérifiez-là en suivant ce lien (ligne 'blacklists.tar.gz') : ";
+$l_activate_bl=			"Activer la nouvelle version";
+$l_reject_bl=			"Rejeter";
+$l_warning=			"Temps estimé : une minute.";
+$l_specific_filtering=		"Filtrage special";
+$l_forbidden_dns=		"Noms de domaine filtrés";
+$l_forbidden_dns_explain=	"Entrez un nom de domaine par ligne (exemple : .domaine.org)";
+$l_one_dns=			"Entrez un nom de domaine par ligne (exemple : .domaine.org)";
+$l_maj_rehabilitated=		"Noms de domaine ou URLs réhabilités";
+$l_rehabilitated_dns=		"Noms de domaine réhabilités";
+$l_rehabilitated_dns_explain=	"Entrez ici des noms de domaine bloqués par la liste noire <BR> que vous souhaitez réhabiliter.";
+$l_add_to_bl=			"Noms de domaine ou URLs ajoutés à la liste noire";
+$l_forbidden_url=		"URL filtrés";
+$l_forbidden_url_explain=	"Entrez une URL par ligne (exemple : www.domaine.org/perso/index.htm)";
+$l_rehabilitated_url=		"URL réhabilités";
+$l_rehabilitated_url_explain=	"Entrez ici des URL bloquées par la liste noire <BR> que vous souhaitez réhabiliter.";
+$l_one_url=			"Entrez une URL par ligne (exemple : www.domaine.org/perso/index.htm)";
+$l_record=			"Enregistrer les modifications";
+$l_wait=			"Une fois validées, 30 secondes sont nécessaires pour traiter vos modifications";
+$l_ip_filtering=		"Filtrer les URLs contenant une adresse IP au lieu d'un nom de domaine (ex: http://25.56.58.59/index.htm)";
+$l_safe_searching=		"Activer le contrôle scolaire/parental des moteurs de recherche : google, yahoo, bing, metacrawler et Youtube.";
+$l_safe_youtube=		"Pour Youtube, entrez votre identifiant ici : "; 
+$l_youtube_id=			"(<a href='http://www.youtube.com/education_signup' target='cat_help' onclick=window.open('http://www.youtube.com/education_signup','cat_help','width=800,height=600,toolbar=no,scrollbars=yes,resizable=yes') title='Youtube for school'>lien pour créer un identifiant Youtube (Id)</a>)";
+
+
+
+#####################
+acc/admin/filter_exceptions.php
+
+$l_error_open_file=		"Erreur d'ouverture du fichier";
+$l_exception_IP = 		"Exception au filtrage";
+$l_exception_txt=		"Entrez ici les adresses IP des stations du réseau de consultation ne subissant ni filtrage de domaine ni filtrage réseau<BR>Entrez une adresse IP par ligne";
+$l_submit = 			"Enregistrer";
+
+
+
+######################
+acc/admin/ldap.php
+
+$l_ldap_title			= "Authentification externe : LDAP";
+$l_ldap_legend			= "Authentification LDAP";
+$l_ldap_auth_enable_label	= "Activer l'authentification LDAP:";
+$l_ldap_YES			= "OUI";
+$l_ldap_NO			= "NON";
+$l_ldap_server_label		= "Nom du serveur LDAP:";
+$l_ldap_server_text		= "Nom ou IP du serveur LDAP éventuel.";
+$l_ldap_base_dn_label		= "DN de la base LDAP:";
+$l_ldap_base_dn_text		= "DN est le 'Distinguished Name', il situe les informations utilisateurs, exemple: 'o=Mon entreprise, c=FR'.";
+$l_ldap_filter_label		= "Identifiant LDAP:";
+$l_ldap_filter_text		= "Clé utilisée pour la recherche d'un identifiant de connexion, exemple: 'uid', 'sn', etc. Pour un AD mettre 'sAMAccountName'.";
+$l_ldap_base_filter_label	= "Filtre de l'utilisateur LDAP:";
+$l_ldap_base_filter_text	= "Sur option, vous pouvez en plus limiter les objets recherchés avec des filtres additionnels. Par exemple 'objectClass=posixGroup' aurait comme conséquence l'utilisation de '(&amp;(uid=username)(objectClass=posixGroup))'";
+$l_ldap_user_label		= "Utilisateur LDAP:";
+$l_ldap_user_text		= "Laissez vide pour utiliser un accès invité. Si renseigné, ALCASAR se connectera au serveur LDAP en tant qu'un utilisateur spécifié, exemple: 'uid=Utilisateur,ou=MonUnité,o=MaCompagnie,c=FR'. Requis pour les serveurs possédant un Active Directory.";
+$l_ldap_password_label		= "Mot de passe LDAP:";
+$l_ldap_password_text		= "Laissez vide pour un accès invité. Sinon, indiquez le mot de passe de connexion. Requis pour les serveurs possédant un Active Directory.";
+$l_ldap_submit			= "Enregistrer";
+$l_ldap_reset			= "Annuler";
+$l_ldap_test_network_failed	= "Pas de connectivité réseau avec le serveur LDAP.";
+$l_ldap_test_connection_failed	= "Impossible de se connecter au serveur LDAP.";
+$l_ldap_test_bind_ok		= "Connexion LDAP réussie...";
+$l_ldap_test_bind_failed	= "Echec d'authentification sur le serveur LDAP...Vérifiez votre configuration ldap...";
+ 
+
+
+##################
+acc/admin/logo.php
+
+$l_title = 			"Personnalisation du logo d'organisme";
+$l_current_logo = 		"Logo actuel";
+$l_logo_select =		"S&eacute;lectionnez un nouveau logo";
+$l_logo_help1 = 		"votre logo doit &ecirc;tre un fichier au format libre 'PNG'";
+$l_logo_help2 = 		"la taille de ce fichier doit &ecirc;tre inf&eacute;rieure &agrave; 100Ko";
+$l_logo_help3 = 		"rafra&icirc;chissez les pages de votre navigateur pour voir le r&eacute;sultat";
+
+
+#################
+acc/admin/net_filter.php
+
+$l_title_antivir = 		"Antivirus de flux WEB";
+$l_antivir_on=			"L'antivirus de flux WEB est actuellement activ&eacute;";
+$l_antivir_off=			"L'antivirus de flux WEB est actuellement désactiv&eacute;";
+$l_switch_antivir_on=		"Activer l'antivirus";
+$l_switch_antivir_off=		"D&eacute;sactiver l'antivirus";
+$l_title_ip_block=		"Filtrage d'adresses IP";
+$l_ip_address=			"Adresses IP (ou addresse de réseau) bloquées";
+$l_blocked_ip_address=		"Adresses IP";
+$l_blocked_ip_address_comment=	"Commentaires";
+$l_blocked=			"Bloquée";
+$l_ip_block_explain=		"Liste des adresses IP (ou adresses IP de réseaux) bloquées";
+$l_remove=			"Retirer de la liste";
+$l_title_proto = 		"Filtrage de protocoles r&eacute;seau";
+$l_netfilter_on=		"Le filtrage de protocoles r&eacute;seau est actuellement activ&eacute;";
+$l_netfilter_off=		"Le filtrage de protocoles réseau est actuellement désactiv&eacute";
+$l_switch_on=			"Activer le filtrage";
+$l_switch_off=			"D&eacute;sactiver le filtrage";
+$l_comment_on=			"&Agrave; l'exclusion du WEB (port 80), les protocoles r&eacute;seaux sont interdits.<BR>Choisissez ci-dessous les protocoles que vous autorisez";
+$l_comment_off=			"(tous les protocoles réseau sont autoris&eacute;s)";
+$l_protocols=			"Protocoles autoris&eacute;s";
+$l_error_open_file=		"Erreur d'ouverture du fichier";
+$l_port=			"Numéro de port";
+$l_proto=			"Nom du protocole";
+$l_enabled=			"Autoris&eacute;";
+$l_add_to_list=			"Ajouter &agrave; la liste";
+$l_save=			"Enregistrer les modifications";
+
+
+###################
+acc/admin/network.php
+
+$l_network_title	= 	"Configuration réseau";
+$l_eth0_legend		= 	"Eth0 (Interface connectée à Internet)";
+$l_eth1_legend		= 	"Eth1 (Réseau de consultation)";
+$l_internet_legend	= 	"INTERNET";
+$l_ip_adr		= 	"Adresse IP";
+$l_ip_mask		=	 "Masque";
+$l_ip_router		= "Passerelle";
+$l_ip_public		= "Adresse IP publique";
+$l_ip_dns1		= "DNS1";
+$l_ip_dns2		= "DNS2";
+$l_dhcp_title		= "Service DHCP";
+$l_dhcp_state		= "Mode actuel";
+$l_dhcp_mode		= "Les différents modes sont les suivants :";
+$l_DHCP_full		= "DHCP complet";
+$l_DHCP_half		= "Demi DHCP ";
+$l_DHCP_off		= "Sans DHCP";
+$l_DHCP_full_explain	= "Le serveur DHCP couvre la totalité des adresses du réseau. Des adresses statiques peuvent être réservées (cf. ci-dessous).";
+$l_DHCP_half_explain	= "La première moitié du réseau est réservé à l'adressage statique, l'autre moitié est en adressage dynamique (DHCP).";
+$l_DHCP_off_explain	= "Le serveur DHCP est arrêté.";
+$l_static_dhcp_title	= "Réservation d'adresses IP statiques";
+$l_mac_address		= "Adresse MAC";
+$l_ip_address		= "Adresse IP";
+$l_mac_del		= "Supprimer de la liste";
+$l_add_to_list		= "Ajouter";
+$l_apply		= "Appliquer les changements";
+
+
+
+###################
+acc/admin/services.php
+
+$l_services_title	= "Configuration des services";
+$l_main_services	= "Services réseau principaux";
+$l_opt_services		= "Services réseau optionnels";
+$l_service_title 	= "Nom du service";
+$l_service_start 	= "D&eacute;marrer";
+$l_service_stop 	= "Arr&ecirc;ter";
+$l_service_restart 	= "Red&eacute;marrer";
+$l_service_status 	= "Status";
+$l_service_action 	= "Actions";
+$l_enable		= "actif";
+$l_disable		= "inactif";
+$l_radiusd		= "Serveur d'authentification et d'autorisation";
+$l_chilli		= "Passerelle d'interception";
+$l_dansguardian		= "Filtre d'URL et de contenu WEB";
+$l_mysqld		= "Serveur de la base de données usager";
+$l_squid		= "Serveur de cache WEB";
+$l_dnsmasq		= "Serveur DNS et filtre de domaine";
+$l_httpd		= "Serveur WEB (Centre de Gestion d'ALCASAR)";
+$l_havp			= "Filtre antivirus WEB";
+$l_sshd			= "Accès sécurisée à distance";
+$l_freshclam		= "Mise à jour de l'antivirus toutes les 2 heures";
+$l_ntpd			= "Service de mise à l'heure réseau";
+
+
+
+##################
+acc/admin/update_ldap.php
+
+
+
+
+####################
+acc/backup/sauvegarde.php
+
+$l_backups = 			"Sauvegarde";
+$l_create_user_db_backup =	"Sauvegarder la base active des usagers";
+$l_tracability_backup =		"Sauvegarder le fichier actif de traces";
+$l_create_system_backup =	"Créer une archive système";
+$l_execute =			"Ex&eacute;cuter";
+$l_backup_files =		"Fichiers disponibles pour archivage";
+$l_firewall_log =		"Journaux du parefeu (Firewall)";
+$l_users_db_backups =		"Base des usagers";
+$l_system_backup =		"Archive système";
+$l_empty =			"vide";
+
+
+
+#################
+acc/manager/lib/langues.php
+
+$l_monday=			"lundi";
+$l_tuesday=			"mardi";
+$l_wednesday=			"mercredi";
+$l_thursday=			"jeudi";
+$l_friday=			"vendredi";
+$l_saturday=			"samedi";
+$l_sunday=			"dimanche";
+$l_monthly="mensuelle";$l_weekly=	"hebdomadaire";$l_daily="journalière";$l_by_session="par session";
+$l_day =			"Jour";
+$l_limit=			"limite";
+$l_daily_limit=			"limite journalière";
+$l_used_time =			"Temps utilisé";
+$l_last7days_status =		"&Eacute;tat sur les 7 derniers jours";
+$l_connections_number =		"Nombre de connexions";
+$l_download =			"Données téléchargées";
+$l_upload =			"Données envoyées";
+$l_average =			"moyenne";
+$l_already_exist =		"existe d&eacute;j&agrave;";
+$l_search_filter =		"Filtre de recherche";
+$l_search_criteria =		"Critère de recherche";
+$l_search =			"Lancer la recherche";
+$l_no_user_found =		"Aucun usager trouvé";
+$l_special_attribute =		"Attribut particulier";
+$l_attribute =			"Attribut";
+$l_value =			"Valeur<br>(ivide = tous)";
+$l_user =			"Usager";
+$l_users_managment =		"Gestion des usagers";
+$l_groups_managment =		"Gestion des groupes";
+$l_login =			"Identifiant";
+$l_password =			"Mot de passe";
+$l_new_password =		"Nouveau mot de passe";
+$l_passwd_gen =			"générer";
+$l_user_create =		"Créer un usager";			
+$l_nb_users =			"Nombre d'usagers";			
+$l_group_create =		"Créer un groupe";			
+$l_group_select =		"Selectionnez un groupe";			
+$l_group =			"Groupe";
+$l_created_groups =		"Groupe(s) déjà créé(s)";
+$l_group_name =			"Nom du groupe";
+$l_group_members =		"Membres du groupe :<br>(séparé par un espace ou un 'retour chariot')";
+$l_group_members_remove =	"Supprimer tous les membres de ce groupe";
+$l_group_members_to_remove =	"<b>Membres à effacer :</b><br>Les membres sélectionnés seront effacés du groupe.<br>Utilisez 'shift' ou 'Ctrl' pour une sélection multiple.";
+$l_group_members_to_add =	"<b>Membres à ajouter :</b><br>Separez les membres avec un 'espace' ou un 'retour chariot'.";
+$l_manage_selected_user=	"Gérer l'usager sélectionné";
+$l_group_member =		"Membre du groupe";
+$l_group_empty =		"La liste des groupes est vide";
+$l_main_group =			"Le groupe principal est surligné";
+$l_no_open_session =		"Aucune session ouverte";
+$l_opened_sessions =		"session(s) ouverte(s)";
+$l_active_accounting =		"comptabilité(s) active(s)";
+$l_want_to_close =		"Voulez-vous les fermer ?";
+$l_yes_close =			"Oui, fermer";
+$l_status =			"&Eacute;TAT";
+$l_personal_info =		"INFORMATIONS PERSONNELLES";
+$l_connections =		"CONNEXIONS";
+$l_open_sessions =		"SESSIONS OUVERTES";
+$l_members =			"MEMBRES";
+$l_attributes =			"ATTRIBUTS";
+$l_remove =			"SUPPRIMER";
+$l_locked_user =		"Le compte usager est verrouillé";
+$l_user_remain_login =		"L'usager peut se connecter pendant ";
+$l_user_expired =		"Le compte usager a expiré";
+$l_connected =			"Connecté depuis";
+$l_connection_time =		"Durée de connexion";
+$l_total_connections_time =	"Durée cumulée des connexions";
+$l_user_never_login =		"Cet usager ne s'est jamais connecté";
+$l_user_not_login_yet =		"Cet usager n'est pas connecté actuellement";
+$l_last_login =			"Dernière connexion";
+$l_remain_time =		"Temps de connexion restant";
+$l_name =			"Nom et pr&eacute;nom";
+$l_email =			"Adresse de couriel";
+$l_homephone =			"Numéro de téléphone privé";
+$l_telephonenumber =		"Numéro de téléphone de bureau";
+$l_mobile =			"Numéro de téléphone portable";
+$l_lang_ticket =		"Langue du ticket";
+$l_simultaneous_use =		"Nombre de session simultanée";
+$l_max_all_session =		"Durée maximale de connexion<br>(en secondes)";
+$l_expiration =			"Date d'expiration";
+$l_session_timeout =		"Durée maximale d'une session<br>(en secondes)";
+$l_daily_timeout =		"Durée de connexion maximale journalière<br>(en secondes)";
+$l_monthly_timeout =		"Durée de connexion maximale mensuelle<br>(en secondes)";
+$l_login_time = 		"Période hebdomadaire";
+$l_max_input_octets =		"Maximum de données émises<br>(en octets)";
+$l_max_output_octets =		"Maximum de données reçues<br>(en octets)";
+$l_max_total_octets =		"Maximum de données échangées<br>(en octets)";
+$l_max_bandwidth_up =		"Limite de débit montant<br>(en kbits/seconde)";
+$l_max_bandwidth_down =		"Limite de débit descendant<br>(en kbits/seconde)";
+$l_wispr_redirection =		"URL de redirection";
+$l_click_for_help =		"Cliquez pour afficher l'aide sur cet attribut";	
+$l_show_profile =		"Afficher le profil";
+$l_are_you_sure =		"&Ecirc;tes-vous sûr de vouloir supprimer";
+$l_yes_remove =			"Oui, supprimer";
+$l_create =			"Créer";
+$l_change =			"Modifier";
+
+//Langue du Ticket d'impression en fonction de la liste déroulante
+$l_title_imp =			"TICKET ACC&Egrave;S INTERNET";
+$l_login_imp =			"Utilisateur :";
+$l_password_imp = 		"Mot de passe :";
+$l_max_all_session_imp=		"Dur&eacute;e totale autoris&eacute;e :";
+$l_session_timeout_imp=		"Dur&eacute;e d'une session :";
+$l_max_daily_session_imp=	"Dur&eacute;e journali&egrave;re :";
+$l_max_monthly_session_imp =	"Dur&eacute;e mensuelle :";
+$l_expiration_imp=		"Date d'expiration :";
+$v_illimit=			"Illimit&eacute;e";
+$v_without=			"Aucune";
+

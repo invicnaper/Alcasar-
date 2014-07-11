@@ -1,0 +1,38 @@
+td {font-family:verdana,sans-serif;text-decoration:none;font-size:11px}
+th {font-family:verdana,sans-serif;text-decoration:none;font-size:11px}
+A {FONT-FAMILY: verdana,sans-serif; FONT-SIZE: 11px; TEXT-DECORATION: none}
+H1 {FONT-FAMILY: lucida,sans-serif; FONT-SIZE: 24px; TEXT-DECORATION: none}
+INPUT{
+	BACKGROUND-COLOR: #EEEEEE;
+	BORDER-BOTTOM: #3333CC 1px solid;
+	BORDER-LEFT: #3333CC 1px solid;
+	BORDER-RIGHT: #3333CC 1px solid;
+	BORDER-TOP: #3333CC 1px solid;
+	COLOR: #000000;
+	FONT-FAMILY: Verdana
+}
+INPUT.button{
+	BACKGROUND-COLOR: #999999;
+	BORDER-BOTTOM: #3333CC 1px solid;
+	BORDER-LEFT: #3333CC 1px solid;
+	BORDER-RIGHT: #3333CC 1px solid;
+	BORDER-TOP: #3333CC 1px solid;
+	COLOR: #000000;
+	FONT-FAMILY: Verdana
+}
+body
+{
+	BACKGROUND-COLOR: #EFEFEF;
+}
+a:link {
+	color: #000000;
+}
+a:visited {
+	color:#000000;
+}
+a:hover {
+	color:#000000;
+}
+a:active {
+	color:#000000;
+}

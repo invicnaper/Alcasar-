@@ -1,0 +1,145 @@
+/* 	
+	Feuille de style pour les pages d'interceptions coté utilisateurs d'ALCASAR
+	Auteur : Stéphane ERARD
+	Licence : GNU GPL
+
+*/
+
+
+/* règles générales */
+
+/* Couleurs de polices */
+:link, :visited, :hover:link, :hover:visited  {
+	color: #000000;
+}
+BODY {
+	color: #666666;
+}
+
+/* Style de police */
+
+BODY, :link, :visited, :hover:link, :hover:visited  {
+	font-family: "DejaVu Sans";
+}
+
+
+/*Couleurs de fond */
+
+BODY {
+	background-color: #666666;
+}
+
+
+/* Règles des balises HTML */
+
+P {
+	text-align: justify;
+}
+
+BODY {
+	background-image: url(/images/fond.png);
+	background-repeat: repeat-x;
+	text-align: center;
+	font-size: 12px;
+	margin: 0px;
+}
+
+TABLE {
+	font-size: 90%;
+}
+IMG {
+	height: 150px;
+}
+
+/*Boite de dialogue de deconnection*/
+
+#statusPage, #loggedOutPage {
+	width: 450px;
+	margin: 12px auto;
+}
+
+#Chilli {
+	width: 450px;
+	margin: 10px auto 10px auto;
+}
+
+#auth_reussi, #errorTable, #statusTable, #waitTable, #disconnectTable  {
+	width: 450px;
+	padding-top: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 0px;
+}
+#auth_reussi {
+	margin-top: 12px;
+}
+.text_auth {
+	font-size: 20px;
+}
+.text_auth_welcom {
+	font-size: 16px;
+}
+.text_auth, .text_auth_welcom, .alert {
+	font-weight: bold;
+}
+.text_auth, .text_auth_welcom, .alert, .text_warn, #conHistoryLabel, .lien_deco, .log_out {
+	text-align: center;
+}
+.lien_deco {
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+.log_out {
+	font-size: 24px;
+	margin-top: 30px;
+}
+
+/*
+Ajout stephane weber
+*/
+#errorTable, #statusTable, #waitTable, #disconnectTable {
+	BACKGROUND-COLOR: #ffffff;
+	margin: 1px;
+	border: 1px #efefef solid;
+
+/* ombrage css3*/
+
+	-moz-box-shadow: 0px 0px 6px #000; 
+	-webkit-box-shadow: 0px 0px 6px #000;
+	box-shadow: 0px 0px 6px #000;
+}
+.chilliLabel {
+	font-weight: bold;
+}
+.chilliValue {
+	/* A DEFINIR*/
+}
+.wait {
+	height: 16px;
+}
+/*
+Fin Ajout stephane weber
+*/
+#conHistoryLabel {
+	padding-top: 6px;
+	padding-bottom: 5px;
+}
+#conHistory ul {
+	list-style-type: none;
+	text-align: left;
+	padding-left: 80px;
+}
+.alert {
+	font-size: 14px;
+	color: red;
+	margin-top: 5px;
+	height: 40px;
+}
+.link_logout {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.text_warn {
+	margin: 0px;
+	font-size: 9px;
+}
